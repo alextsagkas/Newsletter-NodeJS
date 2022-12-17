@@ -3,9 +3,9 @@
   "name": "newsletter-signup",
   "version": "1.0.0",
   "description": "Newsletter app",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon index.js"
   },
   "author": "Alexandros Tsagkaropoulos",
   "license": "ISC",
