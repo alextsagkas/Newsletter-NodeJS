@@ -6,7 +6,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const port = 3000; // localhost port
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -55,6 +55,6 @@ app.get("/", (req, res) => {
   res.sendFile(`${process.cwd()}/signup.html`);
 });
 
-app.listen(process.env.PORT || port, () => {
-  console.log(`The app is running at port ${process.env.PORT || port}`);
+app.listen(PORT, () => {
+  console.log(`The app is running at port ${PORT}`);
 });
