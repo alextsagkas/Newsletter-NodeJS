@@ -1,8 +1,5 @@
 {
   "type": "module",
-  "engines": {
-    "node": "18.x"
-  },
   "name": "newsletter-signup",
   "version": "1.0.0",
   "description": "Newsletter app",
